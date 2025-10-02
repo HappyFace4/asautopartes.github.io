@@ -508,7 +508,7 @@ footer:hover{
 
 @font-face {
   font-family: 'FullPack'; /* El nombre que usarás en el HTML */
-  src: url('assets/full\ Pack\ 2025.ttf') format('woff2'); /* Ruta al archivo de la fuente */
+  src: url('full\ Pack\ 2025.ttf') format('woff2'); /* Ruta al archivo de la fuente */
   font-weight: normal; /* Opcional: grosor de la fuente */
   font-style: normal;  /* Opcional: estilo de la fuente (normal, italic) */
 }
