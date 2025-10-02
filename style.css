@@ -597,6 +597,14 @@ footer:hover{
     width: 55vw;
   }
 
+  .product-name-price{
+    display: flex;
+    flex-direction: column;
+  }
+  .product-name-price h1{
+    font-size: 1.3rem;
+  }
+
   /* Mostrar hamburguesa */
   .hamburger {
     display: block;
