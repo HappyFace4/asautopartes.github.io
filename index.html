@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AS Repuestos</title>
+
+  <!-- Fuente Montserrat -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/55b77e803d.js" crossorigin="anonymous"></script>
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+  <header>
+    <!-- Bloque logo -->
+    <div class="logo">
+      <img src="logo.svg" alt="AS Repuestos" />
+      <span>AUTOPARTES</span>
+    </div>
+
+    <!-- Menú de navegación -->
+    <nav class="nav">
+      <ul>
+        <li><a href="#">INICIO</a></li>
+        <li><a href="#">CATEGORÍA 1</a></li>
+        <li><a href="#">CATEGORÍA 2</a></li>
+        <li><a href="#">CATEGORÍA 3</a></li>
+      </ul>
+    </nav>
+
+    <!-- Carrito -->
+    <div class="cart">
+      <button>
+        <i class="fa-solid fa-cart-shopping"></i>
+      </button>
+      <div class="cart-dropdown"></div>
+    </div>
+
+    <!-- Botón hamburguesa (solo móvil) -->
+    <button class="hamburger">
+      <i class="fa-solid fa-bars"></i>
+    </button>
+  </header>
+
+  <main class="product-grid">
+    <div class="product-card" data-id="filtro-aceite"></div>
+    <div class="product-card" data-id="neumatico"></div>
+    <div class="product-card" data-id="amortiguador"></div>
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <p>
+        <i class="fa-solid fa-phone"></i>
+         +56 9 7469 5410
+      </p>
+      <p>
+        <i class="fa-solid fa-envelope"></i>
+        as.autopartes.losrios@gmail.com
+      </p>
+      <p>
+         <i class="fa-brands fa-facebook"></i>
+         <a href="https://www.facebook.com/ASRepuestos" target="_blank">Facebook</a>
+      </p>
+    </div>
+  </footer>
+
+</body>
+</html>
