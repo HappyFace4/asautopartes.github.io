@@ -1,0 +1,75 @@
+{
+  "template": {
+    "name": "Filtro de aceite",
+    "price": 19990,
+    "available": true,
+    "description": "Descripción detallada del filtro de aceite",
+    "img": "product img/Imagen1.png",
+    "model": "PEUGEOT2019"
+  },
+
+
+  "soporte-motor-central-caja-cambios-mr1": {
+    "name": "Soporte Motor Central (Caja Cambios)",
+    "price": 11900,
+    "available": true,
+    "description": "Soporte Motor Central WURTEX",
+    "img": "product img/soporte-motor-central-caja-cambios-mr1.png",
+    "model": "PEUGEOT 301 2017 / C. C-ELYSEE"
+  },
+
+  "soporte-motor-derecho-bl": {
+    "name": "Soporte Motor Derecho",
+    "price": 101320,
+    "available": true,
+    "description": "Soporte Motor Derecho ORIGINAL",
+    "img": "product img/soporte-motor-derecho-bl.png",
+    "model":"PEUGEOT 208/301 2017 / C. C-ELYSEE"
+  },
+
+  "telecomando-luces-completo-mr": {
+    "name": "Telecomando Luces Completo",
+    "price": 0,
+    "available": true,
+    "description": "Telecomando Luces Completo ORIGINAL",
+    "img": "product img/telecomando-luces-completo-mr.png",
+    "model": "PEUGEOT 301 2017 / C. C-ELYSEE"
+  },
+
+  "terminal-direccion-derecho-mr1": {
+    "name": "Terminal Dirección Derecho",
+    "price": 12800,
+    "available": true,
+    "description": "Terminal Dirección Derecho TALOSA",
+    "img": "product img/terminal-direccion-mr1.png",
+    "model": "PEUGEOT 207/301 2017 / C. C-ELYSEE"
+  },
+
+  "terminal-direccion-izquierda-mr1": {
+    "name": "Terminal Dirección Izquierdo",
+    "price": 12800,
+    "available": true,
+    "description": "Terminal Dirección Izquierdo TALOSA",
+    "img": "product img/terminal-direccion-mr1.png",
+    "model": "PEUGEOT 207/301 2017 / C. C-ELYSEE"
+  },
+
+  "terminal-direccion-derecho-mr2": {
+    "name": "Terminal Dirección Derecho",
+    "price": 0,
+    "available": true,
+    "description": "Terminal Dirección Derecho STP",
+    "img": "product img/terminal-direccion-mr2.png",
+    "model":"PEUGEOT 207/301 2017 / C. C-ELYSEE"
+  },
+
+  "terminal-direccion-derecho-mr3": {
+    "name": "Terminal Dirección Derecho",
+    "price": 12800,
+    "available": true,
+    "description": "Terminal Dirección Derecho TALOSA",
+    "img": "product img/terminal-direccion-mr1.png",
+    "model":"PEUGEOT 207/301 2017 / C. C-ELYSEE",
+    "ESTE PRODUCTO ESTÁ REPETIDO-------------------------------------------": null
+  }
+}

@@ -1,0 +1,617 @@
+body {
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  min-height: 100vh;
+  background: linear-gradient(to top left, #3A6B35 0%, #ffffff 50%);
+  background-attachment: fixed; /* Mantiene el fondo fijo al viewport */
+}
+
+/* asegura que la página ocupe el 100% de la altura */
+html, body {
+  height: 100%;          /* El body ocupa todo el alto */
+  margin: 0;             /* Sin margen por defecto */
+  display: flex;
+  flex-direction: column;
+}
+
+/* el contenido principal se expande */
+main {
+  flex: 1;
+}
+
+/* Header general */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: linear-gradient(to top left, #3A6B35 0%, #101d0e 50%);
+  padding: 30px 20px;
+  color: white;
+  position: relative;
+}
+header::after {
+  content: "";
+  position: absolute;
+  bottom: -50px;       /* empieza justo debajo del header */
+  left: 0;
+  width: 100%;
+  height: 50px;        /* altura del gradient */
+  background: linear-gradient(to bottom, #141414 0%, #3A6B3500 100%);
+  pointer-events: none; /* para que no interfiera con clicks */
+}
+
+/* Logo */
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo img {
+  height: 50px;
+}
+
+.logo span {
+  font-size: 160%;
+  color: rgb(42, 99, 34);
+  font-family: "FullPack";
+}
+
+/* Navegación (menú) */
+.nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  padding: 0;
+  margin: 0;
+}
+
+
+.nav li {
+  background-color: #3A6B35;
+  box-shadow: 0px 0px 8px 1px #000000;
+  border-radius: 8px; /* esquinas redondeadas */
+  padding: 0.9rem 1rem;
+  margin: 0px 5px;
+  transition: box-shadow 0.5s;
+}
+
+.nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.nav li:hover{
+   box-shadow: 0px 0px 20px 4px #000000;
+}
+
+.nav a {
+  font-size: 1rem;
+  text-decoration: none;
+  color: white;
+  padding: 10px;
+  font-weight: 800;
+}
+
+/* Carrito */
+.cart button {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: white;
+  box-shadow: 0px 0px 8px 1px #000000;
+  padding: 10px 12px;
+  border-radius: 8px;
+  transition: box-shadow 0.5s;
+}
+.cart button:hover{
+  box-shadow: 0px 0px 20px 4px #000000;
+}
+
+/* Botón hamburguesa */
+.hamburger {
+  display: none;
+  font-size: 28px;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 250px); /* cada columna fija de 250px */
+  gap: 2vh 3vw; /* espacio entre las cards */
+  padding: 20px;
+  justify-content: center; /* alinea la grilla a la izquierda */
+}
+
+
+.product-card {
+  background: linear-gradient(to top left, #3A6B35 0%, #101d0e 50%);
+  border-radius: 15px;
+  padding: 20px;
+  width: 100%;          /* ancho fijo */
+  height: 410px;         /* alto fijo */
+  text-align: left;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+  margin: 20px auto;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* separa imagen y info */
+  transition: /*transform 0.5s,*/ box-shadow 0.5s;
+}
+.card-actions {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+
+.product-btn {
+  font-family: "Montserrat";
+  background-color: #38852eff;
+  border: none;
+  color: rgb(255, 255, 255);
+  padding: 10px 15px;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s, color 0.2s;
+  text-decoration: none;
+  display: inline-block;
+  text-align: center;
+}
+
+.product-btn:hover {
+  background-color: rgb(255, 255, 255);
+  color: #38852eff;
+}
+
+.product-card:hover {
+ /* transform: translateY(-5px);*/
+  box-shadow: 0 5px 20px 10px rgba(0,0,0,0.5);
+}
+
+/* Imagen con tamaño fijo dentro de la card */
+.product-image {
+  width: 100%;
+  height: 230px;           /* altura fija para todas las imágenes */
+  object-fit: cover;       /* adapta la imagen al tamaño sin deformarse */
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.product-info {
+  flex-grow: 1;
+  justify-content: flex-start; /* pega todo al inicio */
+}
+
+.product-price-avail{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.product-name {
+  font-size: 1.1rem;
+  margin: 5px 0;
+}
+
+.product-price {
+  font-size: 1rem;
+  color: rgb(79, 187, 65);
+  margin: 5px 0;
+  font-weight: 600;
+}
+
+.product-model {
+  font-weight: bold;
+  font-size: 0.7rem;
+  color: #ffffff;
+  margin-top: 5px;
+  margin-bottom: 0;
+}
+
+.product-availability {
+  font-size: 0.9rem;
+  margin: 5px 0;
+  font-weight: 600;
+}
+
+.in-stock {
+  color: #b1ff14;
+}
+
+.out-of-stock {
+  color: #f44336;
+}
+
+
+.product-page {
+  padding: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.product-detail {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  width: 1000px;
+  background: linear-gradient(to top left, #3A6B35, #141414);
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.5);
+  color: white;
+  align-items: flex-start;
+}
+
+.product-name-price{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.product-detail-image {
+  width: 400px;
+  max-width: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.product-detail-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.product-model-page{
+  font-weight: bold;
+  font-size: 0.9rem;
+  color: #ffffff;
+  margin-top: 5px;
+  margin-bottom: 0;
+}
+
+.cart {
+  position: relative;
+}
+
+.cart-dropdown {
+  display: none;
+  position: absolute;
+  right: 0;
+  top: 40px;
+  width: 300px;
+  max-height: 400px;   /* límite de alto */
+  overflow-y: auto;    /* scroll cuando se llena */
+  background-color: #141414;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+  padding: 10px;
+  border-radius: 10px;
+  z-index: 1000;
+  font-weight: bold;
+}
+
+
+.cart-dropdown.active {
+  display: block;
+}
+
+.cart-item {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 6px;
+  border-bottom: 2px solid #ddd;
+  padding-bottom: 5px;
+  padding-top: 5px;
+}
+
+.cart-item img {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.cart-item-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.cart-item-name {
+  font-weight: bold;
+  margin: 0;
+}
+
+.cart-item-qty, .cart-item-price {
+  margin: 0;
+  font-size: 13px;
+  color: #3A6B35;
+  font-weight: bold;
+}
+
+.cart-item-controls {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.cart-item-controls button {
+  border: none;
+  padding: 0px 8px;
+  margin: 0px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  color: #ffffff;
+  background-color: #3A6B35;
+  transition: background-color 0.2s, color 0.2s;
+}
+.cart-item-controls button:hover {
+  background-color: #ffffff;
+  color: #3A6B35;
+}
+.view-cart-btn{
+  color: #ffffff;
+  background-color: #3A6B35;
+  padding: 5px 10px;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.2s, color 0.2s;
+}
+.view-cart-btn:hover{
+  background-color: #ffffff;
+  color: #3A6B35;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+/* --- Estilos para cart.html ----------------------------------------------------------- */
+.cart-page {
+  max-width: 700px;
+  margin-left: 20px;
+  padding: 20px;
+}
+
+.cart-page h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #3A6B35;
+}
+
+.cart-items-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.cart-item-page {
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  padding: 15px 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #141414;
+}
+
+.cart-item-page img {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+  margin-right: 20px;
+}
+
+
+.cart-item-info-page {
+  flex: 1;
+}
+
+.cart-item-info-page .cart-item-name {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.cart-item-info-page .cart-item-price {
+  color: #3A6B35;
+  margin-bottom: 10px;
+}
+
+.cart-item-controls-page {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.cart-item-controls-page button {
+  font-family: "Montserrat";
+  font-weight: bold;
+  background: #3A6B35;
+  color: #fff;
+  border: none;
+  padding: 7px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  color: #ffffff;
+  background-color: #3A6B35;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.cart-item-controls-page button:hover {
+  background-color: #ffffff;
+  color: #3A6B35;
+}
+
+.cart-item-controls-page span {
+  min-width: 20px;
+  text-align: center;
+  display: inline-block;
+}
+
+
+footer {
+  background: linear-gradient(to top left, #141414 0%, #0512c0 100%);
+  color: white;
+  padding: 15px 0;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+  transition: box-shadow 0.2s;
+  text-align: center;
+  margin-top: 20px;   /* margen visual */
+}
+
+.footer-content {
+  display: flex;
+  justify-content: center; /* centra horizontalmente */
+  gap: 30px; /* espacio entre teléfono y Facebook */
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+}
+
+footer:hover{
+  box-shadow: 0 5px 20px 10px rgba(0,0,0,0.5);
+}
+
+.footer-content p {
+  margin: 5px 0;
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.footer-content a {
+  color: #ffffff; /* dorado como tu logo */
+  text-decoration: none;
+  font-weight: bold;
+  animation: blinking 1s infinite;
+}
+
+@keyframes blinking{
+  0%{
+    color:#ffffff;
+  }
+  50%{
+    color:#38852eff
+  }
+}
+
+@font-face {
+  font-family: 'FullPack'; /* El nombre que usarás en el HTML */
+  src: url('full\ Pack\ 2025.ttf') format('woff2'); /* Ruta al archivo de la fuente */
+  font-weight: normal; /* Opcional: grosor de la fuente */
+  font-style: normal;  /* Opcional: estilo de la fuente (normal, italic) */
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 768px) {
+
+  .logo {
+    gap: 1px;
+  }
+
+  .logo img {
+    height: 30px;
+  }
+
+  .logo span {
+    font-size: 100%;
+    color: rgb(42, 99, 34);
+    font-family: "FullPack";
+  }
+  .cart button{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    width: 40px;
+    height: 40px
+  }
+  .cart-item-controls button {
+    padding: 14px;
+    display: flex;
+    align-items: center;
+  }
+
+  /* Menú oculto en móvil por defecto */
+   .nav {
+    display: none;
+    position: absolute;
+    top: 100%; /* se ubica justo debajo del header */
+    left: 0;
+    right: 0;
+    background-color: #000;
+    padding: 20px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.6);
+  }
+
+  .nav.active {
+    display: block;
+  }
+
+  .nav ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+
+  /* --- RESET estilos heredados de escritorio --- */
+  .nav li {
+    background: none;
+    box-shadow: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .nav ul li a {
+    display: block;
+    width: 100%;
+    padding: 12px 0;
+    text-align: center;
+    background: none;
+    border-radius: 0;
+    color: #38852eff;
+    font-size: 1.1rem;
+    font-weight: bold;
+    text-decoration: none;
+  }
+
+  .nav ul li a:hover {
+    background: rgba(255, 255, 255, 0.1);
+  }
+
+  .product-grid {
+    justify-content: center;
+    grid-template-columns: 60vw
+  }
+  .product-card{
+    width: 55vw;
+  }
+
+  .product-name-price{
+    display: flex;
+    flex-direction: column;
+  }
+  .product-name-price h1{
+    font-size: 1.3rem;
+  }
+
+  /* Mostrar hamburguesa */
+  .hamburger {
+    display: block;
+  }
+
+  .footer-content {
+    flex-direction: column; /* se apilan verticalmente */
+    gap: 10px;
+  }
+}
