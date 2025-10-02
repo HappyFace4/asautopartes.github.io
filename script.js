@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", () => {
+document.addEventListener("DOMContentLoaded", async () => {
 
 
    const MODELS = {
@@ -10,48 +10,13 @@ document.addEventListener("DOMContentLoaded", () => {
   };
 
   // --- Productos ---
-  const products = {
-    "filtro-aceite": {
-      name: "Filtro de aceite",
-      price: 19990,
-      available: true,
-      description: "Descripción detallada del filtro de aceite",
-      img: "Imagen1.png",
-      model: MODELS.PEUGEOT2019
-    },
-    "otro-producto": {
-      name: "Otro producto",
-      price: 25990,
-      available: true,
-      description: "Descripción detallada de otro producto",
-      img: "Imagen1.png",
-      model: MODELS.TOYOTA_COROLLA2020
-    },
-    "neumatico": {
-      name: "Neumático",
-      price: 30000,
-      available: false,
-      description: "Descripción detallada de un neumático",
-      img: "Imagen1.png",
-      model: MODELS.NISSAN_VERSA2018
-    },
-    "amortiguador": {
-      name: "Amortiguador",
-      price: 10000,
-      available: true,
-      description: "Descripción detallada del amortiguador",
-      img: "Imagen1.png",
-      model: MODELS.CHEVROLET_ONIX2021
-    },
-    "bujia": {
-      name: "Bujía",
-      price: 3990,
-      available: true,
-      description: "Descripción detallada de la bujía",
-      img: "Imagen1.png",
-      model: MODELS.PEUGEOT2019
-    },
-  };
+  let products = {};
+  try {
+    const res = await fetch("products.json");
+    products = await res.json();
+  } catch (e) {
+    console.error("Error cargando productos:", e);
+  }
 
 
   // --- Hacer click al logo
