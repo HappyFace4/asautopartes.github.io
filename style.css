@@ -36,7 +36,7 @@ header::after {
   left: 0;
   width: 100%;
   height: 50px;        /* altura del gradient */
-  background: linear-gradient(to bottom, #141414 0%, #3A6B3500 100%);
+  background: linear-gradient(to bottom, #1b3119 0%, #3A6B3500 100%);
   pointer-events: none; /* para que no interfiera con clicks */
 }
 
@@ -134,7 +134,7 @@ header::after {
   border-radius: 15px;
   padding: 20px;
   width: 100%;          /* ancho fijo */
-  height: 410px;         /* alto fijo */
+  height: 430px;         /* alto fijo */
   text-align: left;
   box-shadow: 0 5px 15px rgba(0,0,0,0.5);
   margin: 20px auto;
@@ -206,7 +206,7 @@ header::after {
 
 .product-price {
   font-size: 1rem;
-  color: rgb(79, 187, 65);
+  color: #4fbb41;
   margin: 5px 0;
   font-weight: 600;
 }
@@ -259,6 +259,9 @@ header::after {
   justify-content: space-between;
   align-items: center;
 }
+.product-name-price h1{
+  font-size: 1.5rem
+}
 
 .product-detail-image {
   width: 400px;
@@ -280,6 +283,32 @@ header::after {
   color: #ffffff;
   margin-top: 5px;
   margin-bottom: 0;
+}
+.product-variations select{ /*product.html*/
+  padding: 6px 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+  cursor: pointer;
+  color: #3A6B35;
+  font-weight: bold;
+  margin-bottom: 12px;
+  font-family: "Montserrat";
+}
+.product-variation{ /*index.html*/
+  margin-top: 5px;
+  padding: 2px 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+  cursor: pointer;
+  color: #3A6B35;
+  font-weight: bold;
+  font-family: "Montserrat";
+}
+.label-product-variation{
+  margin-top: 10px;
+  font-size: 14px;
 }
 
 .cart {
@@ -305,6 +334,25 @@ header::after {
 
 .cart-dropdown.active {
   display: block;
+}
+
+/* Webkit (Chrome, Edge, Safari) */
+.cart-dropdown::-webkit-scrollbar {
+  width: 8px; /* grosor */
+}
+
+.cart-dropdown::-webkit-scrollbar-track {
+  background: #141414; /* fondo del track */
+  border-radius: 4px;
+}
+
+.cart-dropdown::-webkit-scrollbar-thumb {
+  background-color: #3A6B35; 
+  border-radius: 4px;
+}
+
+.cart-dropdown::-webkit-scrollbar-thumb:hover {
+  background-color: #2e5128; 
 }
 
 .cart-item {
@@ -362,6 +410,11 @@ header::after {
 .cart-item-controls button:hover {
   background-color: #ffffff;
   color: #3A6B35;
+}
+.cart-item-variation{
+  font-size: 14px;
+  margin-top: 10px;
+  margin-bottom: 0px
 }
 .view-cart-btn{
   color: #ffffff;
@@ -526,7 +579,7 @@ footer:hover{
 
   .logo span {
     font-size: 100%;
-    color: rgb(42, 99, 34);
+    color: #2a6322;
     font-family: "FullPack";
   }
   .cart button{
@@ -590,11 +643,13 @@ footer:hover{
   }
 
   .product-grid {
-    justify-content: center;
+    display: flex;
+    flex-direction: column;
     grid-template-columns: 60vw
   }
   .product-card{
-    width: 55vw;
+    height: 450px;
+    width: 65vw;
   }
 
   .product-name-price{
@@ -602,7 +657,7 @@ footer:hover{
     flex-direction: column;
   }
   .product-name-price h1{
-    font-size: 1.3rem;
+    font-size: 1.1rem;
   }
 
   /* Mostrar hamburguesa */
@@ -613,5 +668,19 @@ footer:hover{
   .footer-content {
     flex-direction: column; /* se apilan verticalmente */
     gap: 10px;
+  }
+  .footer-content p{
+    font-size: 16px;
+  }
+}
+@media (max-width: 420px) {
+  .cart-dropdown.active {
+    transform: translateX(30px)
+  }
+  .logo img{
+    height: 25px;
+  }
+  .logo span{
+    font-size: 80%
   }
 }

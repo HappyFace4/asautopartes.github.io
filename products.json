@@ -9,67 +9,190 @@
   },
 
 
-  "soporte-motor-central-caja-cambios-mr1": {
+  "soporte-motor-central-caja-cambios-wurtex": {
     "name": "Soporte Motor Central (Caja Cambios)",
     "price": 11900,
     "available": true,
     "description": "Soporte Motor Central WURTEX",
-    "img": "product img/soporte-motor-central-caja-cambios-mr1.png",
-    "model": "PEUGEOT 301 2017 / C. C-ELYSEE"
+    "img": "product img/soporte-motor-central-caja-cambios-wurtex.png",
+    "model": "PG. 301 - C.CELYSEE"
   },
 
-  "soporte-motor-derecho-bl": {
-    "name": "Soporte Motor Derecho",
+  "soporte-motor-o": {
+    "name": "Soporte Motor",
     "price": 101320,
     "available": true,
-    "description": "Soporte Motor Derecho ORIGINAL",
-    "img": "product img/soporte-motor-derecho-bl.png",
-    "model":"PEUGEOT 208/301 2017 / C. C-ELYSEE"
+    "description": "Soporte Motor ORIGINAL",
+    "img": "product img/soporte-motor-o.png",
+    "model":"P.207/208/301 - C.CELYSEE"
   },
 
-  "telecomando-luces-completo-mr": {
+  "telecomando-luces-completo-o": {
     "name": "Telecomando Luces Completo",
     "price": 0,
     "available": true,
     "description": "Telecomando Luces Completo ORIGINAL",
-    "img": "product img/telecomando-luces-completo-mr.png",
-    "model": "PEUGEOT 301 2017 / C. C-ELYSEE"
+    "img": "product img/telecomando-luces-completo-o.png",
+    "model": "P.301 - C.CELYSEE"
   },
 
-  "terminal-direccion-derecho-mr1": {
-    "name": "Terminal Dirección Derecho",
+  "terminal-direccion-talosa": {
+    "name": "Terminal Dirección",
     "price": 12800,
     "available": true,
     "description": "Terminal Dirección Derecho TALOSA",
-    "img": "product img/terminal-direccion-mr1.png",
-    "model": "PEUGEOT 207/301 2017 / C. C-ELYSEE"
+    "img": "product img/terminal-direccion-talosa.png",
+    "model": "P.207/301 - C.CELYSEE",
+    "variations": [
+      { "name": "Derecho", "price": 12800, "available": true },
+      { "name": "Izquierdo", "price": 12800, "available": true }
+    ]
   },
 
-  "terminal-direccion-izquierda-mr1": {
-    "name": "Terminal Dirección Izquierdo",
-    "price": 12800,
-    "available": true,
-    "description": "Terminal Dirección Izquierdo TALOSA",
-    "img": "product img/terminal-direccion-mr1.png",
-    "model": "PEUGEOT 207/301 2017 / C. C-ELYSEE"
-  },
-
-  "terminal-direccion-derecho-mr2": {
+  "terminal-direccion-derecho-stp": {
     "name": "Terminal Dirección Derecho",
     "price": 0,
     "available": true,
     "description": "Terminal Dirección Derecho STP",
-    "img": "product img/terminal-direccion-mr2.png",
-    "model":"PEUGEOT 207/301 2017 / C. C-ELYSEE"
+    "img": "product img/terminal-direccion-stp.png",
+    "model":"P.207/301 - C.CELYSEE"
   },
 
-  "terminal-direccion-derecho-mr3": {
-    "name": "Terminal Dirección Derecho",
-    "price": 12800,
+  "amortiguador-delantero-juego-wurtex":{
+    "name": "Amortiguador Delantero - Juego",
+    "price": 25401,
     "available": true,
-    "description": "Terminal Dirección Derecho TALOSA",
-    "img": "product img/terminal-direccion-mr1.png",
-    "model":"PEUGEOT 207/301 2017 / C. C-ELYSEE",
-    "ESTE PRODUCTO ESTÁ REPETIDO-------------------------------------------": null
+    "description": "Amortiguador Delantero Derecho WURTEX",
+    "img": "product img/amortiguador-delantero-juego-wurtex.png",
+    "model": "P.301/207-C.ELY",
+    "variations": [
+      { "name": "Derecho", "price": 25401, "available": true },
+      { "name": "Izquierdo", "price": 21200, "available": true }
+    ]
+  },
+
+  "ampolleta-h-11-12-v-55w-stp":{
+    "name": "Ampolleta H-11 12V 55W",
+    "price": 2500,
+    "available": true,
+    "description": "Ampolleta H-11 12V 55W STP",
+    "img":"product img/ampolleta-h-11-12-v-55w-stp.png",
+    "model": "unknown"
+  },
+
+  "articulacion-axial-der/izq-talosa":{
+    "name": "Articulación Axial Der/Izq",
+    "price": 12650,
+    "available": true,
+    "description": "Articulación Axial Derecho e Izquierdo TALOSA",
+    "img":"product img/articulacion-axial-derizq-talosa.png",
+    "model": "PG. 301 - C.CELYSEE",
+    "variations": [
+      { "name": "Derecho", "price": 12650, "available": true },
+      { "name": "Izquierdo", "price": 12650, "available": true }
+    ]
+  },
+
+  "bandeja-suspension-izquierda-talosa":{
+    "name": "Bandeja Suspensión Izquierda",
+    "price": 35100,
+    "available": true,
+    "description": "Bandeja Suspensión Izquierda TALOSA",
+    "img": "product img/bandeja-suspension-izquierda-talosa.png",
+    "model": "PG. 301 - C.CELYSEE"
+  },
+
+  "bieleta-delantera-talosa": {
+    "name": "Bieleta Delantera",
+    "price": 8900,
+    "available": true,
+    "description": "Bieleta Delantero TALOSA",
+    "img": "product img/bieleta-delantera-talosa.png",
+    "model":"P. 301/207 - C.CELYSEE 208",
+    "variations": [
+      { "name": "Derecho", "price": 12650, "available": true },
+      { "name": "Izquierdo", "price": 12650, "available": true }
+    ]
+  },
+
+  "bomba-aditivo-fap-o": {
+    "name": "Bomba Aditivo FAP",
+    "price": 219900,
+    "available": true,
+    "description": "Bomba Aditivo FAP ORIGINAL",
+    "img": "product img/Imagen1.png",
+    "model": "P.301 - C.CELYSEE"
+  },
+
+  "buje-central-bandeja-sasic": {
+    "name": "Buje Central Bandeja",
+    "price": 0,
+    "available": true,
+    "description": "Buje Central Bandeja Sasic",
+    "img": "product img/Imagen1.png",
+    "model": "P.301/207-C.ELY/C3/PICASSO"
+  },
+
+  "buje-punta-bandeja-sasic": {
+    "name": "Buje Punta Bandeja",
+    "price": 0,
+    "available": true,
+    "description": "Buje Punta Bandeja Sasic",
+    "img": "product img/Imagen1.png",
+    "model": "P.301/207-C.ELY/C3/PICASSO"
+  },
+
+  "caja-termostato-o": {
+    "name": "Caja Termostato",
+    "price": 79900,
+    "available": true,
+    "description": "Caja Termostato ORIGINAL",
+    "img": "product img/Imagen1.png",
+    "model": "unknown"
+  },
+
+  "cañeria-clindro-embrague-o": {
+    "name": "Cañeríaa Cilindro Embrague",
+    "price": 37900,
+    "available": true,
+    "description": "Cañería Cilindro Embrague ORIGINAL",
+    "img": "product img/cañeria-clindro-embrague-o.png",
+    "model": "P.301 - C.CELYSEE"
+  },
+
+  "cazoleta-amortiguador-delantero-derecho-o": {
+    "name": "Cazoleta Amortiguador Delantero Derecho",
+    "price": 34301,
+    "available": true,
+    "description": "Cazoleta Amortiguador Delantero Derecho ORIGINAL",
+    "img": "product img/cazoleta-amortiguador-delantero-derecho-o.png",
+    "model": "C-ELYSEE"
+  },
+
+  "cilindro-de-embrague-o":{
+    "name": "Cilindro de Embrague",
+    "price": 0,
+    "available": true,
+    "description": "Cilindro de Embrague ORIGINAL",
+    "img": "product img/cilindro-de-embrague-o.png",
+    "model": "unknown"
+  },
+
+  "correa-alternador-6pk962-c/a-o": {
+    "name": "Correa Alternador 6PK962 C/A",
+    "price": 18900,
+    "available": true,
+    "description": "Correa Alternador 6PK962 C/A ORIGINAL",
+    "img": "product img/Imagen1.png",
+    "model": "P.301 - C.CELYSEE"
+  },
+
+  "deposito-auxiliar-agua-radiador-o": {
+    "name": "Deposito Auxiliar Agua Radiador",
+    "price": 0,
+    "available": true,
+    "description": "Deposito Auxiliar Agua Radiador ORIGINAL",
+    "img": "product img/deposito-auxiliar-agua-radiador-o.png",
+    "model": "unknown"
   }
 }
