@@ -259,6 +259,7 @@ document.querySelectorAll(".product-card").forEach((card) => {
     const variationName = selectedVariation ? selectedVariation.name : null;
     const variationPrice = selectedVariation ? selectedVariation.price : product.price;
     addToCart(id, product.name, variationPrice, product.img, variationName);
+    showToast("Añadido al carrito");
   });
 
   actionsDiv.appendChild(viewBtn);
@@ -335,6 +336,7 @@ if (productPage) {
         const variationName = selectedVariation ? selectedVariation.name : null;
         const variationPrice = selectedVariation ? selectedVariation.price : product.price;
         addToCart(id, product.name, variationPrice, product.img, variationName);
+        showToast("Añadido al carrito");
       });
     }
   }
@@ -420,4 +422,31 @@ if (productPage) {
     renderCart();
     renderCartPageIfPresent();
   });
+
+  // --- Notificaciones tipo toast ---
+const toastContainer = document.createElement("div");
+toastContainer.className = "toast-container";
+document.body.appendChild(toastContainer);
+
+function showToast(message) {
+  const toast = document.createElement("div");
+  toast.className = "toast";
+  toast.innerText = message;
+
+  toastContainer.appendChild(toast);
+
+  // Forzar el reflow para activar la animación
+  requestAnimationFrame(() => {
+    toast.classList.add("show");
+  });
+
+  // Quitar después de 3s
+  setTimeout(() => {
+    toast.classList.remove("show");
+    setTimeout(() => {
+      toast.remove();
+    }, 300);
+  }, 3000);
+}
+
 });
