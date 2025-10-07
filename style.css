@@ -129,6 +129,7 @@ header::after {
 }
 
 .product-grid {
+  margin-top: 100px;
   display: grid;
   grid-template-columns: repeat(4, 250px); /* cada columna fija de 250px */
   gap: 2vh 3vw; /* espacio entre las cards */
