@@ -128,7 +128,7 @@
     "name": "Buje Central Bandeja",
     "price": 0,
     "available": true,
-    "description": "Buje Central Bandeja Sasic",
+    "description": "Buje Central Bandeja SASIC",
     "img": "product img/Imagen1.png",
     "model": "P.301/207-C.ELY/C3/PICASSO"
   },
@@ -137,7 +137,7 @@
     "name": "Buje Punta Bandeja",
     "price": 0,
     "available": true,
-    "description": "Buje Punta Bandeja Sasic",
+    "description": "Buje Punta Bandeja SASIC",
     "img": "product img/Imagen1.png",
     "model": "P.301/207-C.ELY/C3/PICASSO"
   },
@@ -193,6 +193,136 @@
     "available": true,
     "description": "Deposito Auxiliar Agua Radiador ORIGINAL",
     "img": "product img/deposito-auxiliar-agua-radiador-o.png",
+    "model": "unknown"
+  },
+
+  "electrovalvula-turbo/depresor-o": {
+    "name": "Electroválvula Turbo Depresor",
+    "price": 0,
+    "available": true,
+    "description": "Electroválvula Turbo Depresor ORIGINAL",
+    "img": "product img/electrovalvula-turbodepresor-o.png",
+    "model": "unknown"
+  },
+
+  "empaquetadura-tapa-valvula-wurtex": {
+    "name": "Empaquetadura Tapa Válvula",
+    "price": 7700,
+    "available": true,
+    "description": "Empaquetadura Tapa Válvula WURTEX",
+    "img": "product img/empaquetadura-tapa-valvula-wurtex.png",
+    "model": "PG. 301 - C.CELYSEE"
+  },
+
+  "farol-patente-o":{
+    "name": "Farol Patente",
+    "price": 5542,
+    "available": true,
+    "description": "Farol Patente ORIGINAL",
+    "img": "product img/Imagen1.png",
+    "model": "P.301/3008 ->16 - C.CELYSEE"
+  },
+
+  "farol-trasero-tyc": {
+    "name": "Farol Trasero",
+    "price": 83100,
+    "available": true,
+    "description": "Farol Trasero TYC",
+    "img": "product img/farol-trasero-tyc.png",
+    "model": "C-ELYSEE 2017",
+    "variations": [
+      { "name": "Derecho", "price": 83100, "available": true },
+      { "name": "Izquierdo", "price": 83100, "available": true }
+    ]
+  },
+
+  "farol-trasero-derecho-china": {
+    "name": "Farol Trasero Derecho",
+    "price": 61300,
+    "available": true,
+    "description": "Farol Trasero Derecho CHINO",
+    "img": "product img/Imagen1.png",
+    "model": "C-ELYSEE 2017"
+  },
+
+  "kit-distribucion-bomba-o": {
+    "name": "Kit Distribución Bomba",
+    "price": 73780,
+    "available": true,
+    "description": "Kit Distribución Bomba ORIGINAL",
+    "img": "product img/kit-distribucion-bomba-o.png",
+    "model": "unknown"
+  },
+
+  "maza-rueda-wurtex": {
+    "name": "Maza Rueda",
+    "price": 15300,
+    "available": true,
+    "description": "Maza Rueda WURTEX",
+    "img": "product img/maza-rueda-wurtex.png",
+    "model": "PG. 301/106/206/207"
+  },
+
+  "optico-izquierdo-china": {
+    "name": "Óptico Izquierdo",
+    "price": 76600,
+    "available": true,
+    "description": "Óptico Izquierdo CHINO",
+    "img": "product img/optico-izquierdo-china.png",
+    "model": "PG. 301"
+  },
+
+  "pastillas-de-freno-juego-stp": {
+    "name": "Pastillas de Freno Juego",
+    "price": 17350,
+    "available": true,
+    "description": "Pastillas de Freno Juego STP",
+    "img": "product img/pastillas-de-freno-juego-stp.png",
+    "model": "unknown"
+  },
+  
+  "pastillas-de-freno-juego-drive+": {
+    "name": "Pastillas de Freno Juego",
+    "price": 15990,
+    "available": true,
+    "description": "Pastillas de Freno Juego DRIVE+",
+    "img": "product img/Imagen1.png",
+    "model": "P.206/301/307/Partner - C.CElysee/C4/Picasso/Berlingo"
+  },
+
+  "pastillas-de-freno-juego-semimetalica-wurtex": {
+    "name": "Pastillas de Freno Juego Semimetalica",
+    "price": 13990,
+    "available": true,
+    "description": "Pastillas de Freno Juego Semimetalica WURTEX",
+    "img": "product img/pastillas-de-freno-juego-semimetalica-wurtex.png",
+    "model": "unknown"
+  },
+
+  "pastillas-de-freno-juego-high-carbon-stp":{
+    "name": "Pastillas de Freno Juego High Carbon",
+    "price": 19990,
+    "available": true,
+    "description": "Pastillas de Freno Juego High Carbon STP",
+    "img": "product img/pastillas-de-freno-juego-high-carbon-stp.png",
+    "model": "unknown"
+  },
+
+  "partines-de-freno-stp": {
+    "name": "Patines de Freno",
+    "price": 21990,
+    "available": true,
+    "description": "Patines de Freno STP",
+    "img": "product img/partines-de-freno-stp.png",
+    "model": "unknown"
+  },
+
+  "patines-de-freno-wurtex": {
+    "name": "Patines de Freno",
+    "price": 13990,
+    "available": true,
+    "description": "Patines de Freno WURTEX",
+    "img": "product img/Imagen1.png",
     "model": "unknown"
   }
 }
