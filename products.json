@@ -358,7 +358,7 @@
     "price": 18550,
     "available": true,
     "description": "Rodamiento Rueda Delantero STP",
-    "img": "product img/rodamiento-maza-delantero-stp",
+    "img": "product img/rodamiento-maza-delantero-stp.png",
     "model": "PG. 207"
   },
 
@@ -389,3 +389,4 @@
     "model": "P.208/301/Partner 1.4/1.6 Hdi"
   }
 }
+
