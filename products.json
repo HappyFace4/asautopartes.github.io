@@ -152,7 +152,7 @@
   },
 
   "cañeria-clindro-embrague-o": {
-    "name": "Cañeríaa Cilindro Embrague",
+    "name": "Cañería Cilindro Embrague",
     "price": 37900,
     "available": true,
     "description": "Cañería Cilindro Embrague ORIGINAL",
@@ -324,5 +324,68 @@
     "description": "Patines de Freno WURTEX",
     "img": "product img/Imagen1.png",
     "model": "unknown"
+  },
+
+  "rodamiento-maza-delantero-skf": {
+    "name": "Rodamiento Maza Delantero",
+    "price": 32900,
+    "available": true,
+    "description": "Rodamiento Maza Delantero SKF",
+    "img": "product img/Imagen1.png",
+    "model": "unknown"
+  },
+
+  "rodamiento-maza-trasero-skf": {
+    "name": "Rodamiento Maza Trasero",
+    "price": 29400,
+    "available": true,
+    "description": "Rodamiento Maza Trasero SKF",
+    "img": "product img/Imagen1.png",
+    "model": "unknown"
+  },
+
+  "rodamiento-maza-delantero-stp": {
+    "name": "Rodamiento Maza Delantero",
+    "price": 18900,
+    "available": true,
+    "description": "Rodamiento Maza Trasero STP",
+    "img": "product img/rodamiento-maza-delantero-stp.png",
+    "model": "P.301/207/208/2008 C.ELY/C2/C3/C4/DS3"
+  },
+
+  "rodamiento-rueda-delantero-stp": {
+    "name": "Rodamiento Rueda Delantero",
+    "price": 18550,
+    "available": true,
+    "description": "Rodamiento Rueda Delantero STP",
+    "img": "product img/rodamiento-maza-delantero-stp",
+    "model": "PG. 207"
+  },
+
+  "seguro-pastilla-freno-juego": {
+    "name": "Seguro Pastilla Freno Juego",
+    "price": 0,
+    "available": true,
+    "description": "Seguro Pastilla Freno Juego GTX",
+    "img": "product img/Imagen1.png",
+    "model": "unknown"
+  },
+
+  "sensor-oxigeno-superior-weida": {
+    "name": "Sensor Oxígeno Superior",
+    "price": 41990,
+    "available": true,
+    "description": "Sensor Oxígeno Superior WEIDA",
+    "img": "product img/Imagen1.png",
+    "model": "HYUNDAI-KIA"
+  },
+
+  "sensor-temperatura-gases-china": {
+    "name": "Sensor Temperatura Gases",
+    "price": 49990,
+    "available": true,
+    "description": "Sensor Temperatura Gases CHINA",
+    "img": "product img/Imagen1.png",
+    "model": "P.208/301/Partner 1.4/1.6 Hdi"
   }
 }
